@@ -1,0 +1,392 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('images/bg.png');
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+    background-color: #EEEFF3;
+    padding: 1px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 10px;
+    align-items: center;
+
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.logo {
+    color: grey;
+    font-size: 30px;
+}
+
+.login {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.login:hover {
+    color: rgb(225, 225, 225, 0.9);
+}
+
+.join-btn {
+    background-color: #11a2f3;
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.join-btn:hover {
+    background-color: #00a2ff;
+    color: rgb(225, 225, 225, 0.9);
+}
+
+.main {
+    max-width: 1120px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.search-images {
+    display: flex;
+    background-color: rgb(246, 246, 246);
+}
+
+.txt {
+    font-size: 2em;
+    max-width: 350px;
+}
+
+.ia {
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.search-input {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.input-location {
+    height: 65px;
+    width: 400px;
+    border: none;
+    border-radius: 3px;
+}
+
+.input-dot {
+    height: 65px;
+    width: 400px;
+    border: none;
+    border-radius: 3px;
+}
+
+
+.input-location::placeholder {
+    padding-left: 40px;
+    font-size: 1.3em;
+    color: rgb(0, 0, 0, 0.4);
+}
+
+.input-dot::placeholder {
+    padding-left: 40px;
+    font-size: 1.3em;
+    color: rgb(0, 0, 0, 0.4);
+}
+
+.location {
+    position: absolute;
+    top: 183px;
+    left: 50px;
+    color: rgb(0, 0, 0, 0.4);
+    font-size: 1.3em;
+}
+
+.dot {
+    position: absolute;
+    top: 257px;
+    left: 50px;
+    color: rgb(0, 0, 0, 0.4);
+    font-size: 1.3em;
+}
+
+.search-btn {
+    height: 65px;
+    width: 400px;
+    border: none;
+    background-color: #11a2f3;
+    color: #fff;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.images {
+    display: flex;
+}
+
+.photo1 {
+    display: block;
+}
+
+.photo2 {
+    display: block;
+}
+
+/* SPONSOR */
+
+.seen {
+    font-weight: 600;
+    color: rgb(0, 0, 0, 0.2);
+    font-size: 1.5em;
+}
+
+.sponsors {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    border-bottom: solid 0.8px rgb(0, 0, 0, 0.1);
+}
+
+.ap {
+
+}
+
+/* LAST SECTION */
+
+.last {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 20px;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.step {
+    max-width: 220px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.h3-how {
+    font-size: 1.7em;
+    font-weight: 500;
+    position: relative;
+}
+
+.h3-how::after {
+    content: '';
+    width: 54px;
+    height: 3px;
+    display: block;
+    background-color: #11a2f3;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.icon1 {
+    font-size: 1.3em;
+    background-color: rgb(255, 255, 0);
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    border-radius: 100px;
+    padding-top: 18px;
+}
+
+.icon2 {
+    font-size: 1.3em;
+    background-color: rgb(255, 148, 148, 0.7);
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    border-radius: 100px;
+    padding-top: 18px;
+}
+
+.icon3 {
+    font-size: 1.3em;
+    background-color: rgb(221, 7, 221, 0.7);
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    border-radius: 100px;
+    padding-top: 18px;
+}
+
+.txt-o {
+    color: rgb(0, 0, 0, 0.6);
+}
+
+.more-txt {
+    color: #11a2f3;
+    font-size: 1.2em;
+    border-bottom: solid 1px #11a2f3;
+    cursor: pointer;
+}
+
+.more-txt:hover {
+    color: rgb(0, 162, 255);
+    transition: all 0.3s;
+}
+
+.more-txt:hover .more-arrow {
+    transform: translateX(-3px);
+    transition: all 0.3s;
+}
+
+.step-hd {
+    font-weight: 400;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    padding: 10px 10px;
+}
+
+.joined {
+    display: flex;
+    gap: 20px;
+}
+
+.c {
+    color: rgb(0, 0, 0, 0.4);
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 1200px) {
+    .main {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .photo1 {
+        display: none;
+    }
+}
+
+@media (max-width: 965px) {
+    .photo2 {
+        display: none;
+    }
+
+    .search-input {
+        padding: 60px 0 40px;
+    }
+
+    .steps {
+        max-width: 500px;
+        flex-wrap: wrap;
+        row-gap: 35px;
+    }
+
+    .seen {
+        display: none;
+    }
+
+    .sponsors {
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .main {
+        margin-left: 0;
+        margin-right: 0;
+        border-radius: 0;
+    }
+
+    .ap {
+        display: none;
+    }
+
+    .steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        row-gap: 35px;
+        margin-bottom: 15px;
+    }
+
+    .txt {
+        max-width: initial;
+        padding: 0 20px;
+        font-size: 1.8em;
+    }
+
+    .input-dot{
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .input-location {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .search-btn {
+        width: 100%;
+        border-radius: 0;
+    }
+
+}
